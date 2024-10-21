@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EADCA6;
+    font-family: "Poppins", sans-serif;
+}
+.title{
+display: block;
+width: 75%;
+text-align: right;
+padding-right: 40px;
+padding-bottom: 18px;
+}
+.testimonial-box{
+    width: 75%;
+    background-color: #F4F4F4;
+    display: flex;
+    padding:15px;
+    column-gap: 10px;
+}
+.photo-box{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #987070;
+    overflow: hidden;
+}
+.circle img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+    
+}
+.testimonial-text-box{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #C36A2D;
+
+}
+.quote{
+    padding-bottom: 18px;
+   font-style: italic;
+}
+.person h3{
+    padding-bottom: 8px;
+    font-weight: bolder;
+}
+.person span{
+font-style: italic;
+font-weight: 400;
+}
+
+@media(width <= 425px){
+        .testimonial-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .photo-box{
+            padding-bottom: 18px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            display: block;
+            width: 100%;
+          text-align: center;
+          margin: 0 auto;
+            }
+            .title h3{
+                width: 50%;
+                margin:10px auto;
+            }
+}
